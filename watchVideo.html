@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layer/mobile/need/layer.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="css/layer/layer.js"></script><script src="js/bootstrap.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        .pages{
+            width: 1000px;
+            height: 0px;
+            margin-left: 26%;
+            float: left;
+            margin-top: -67px;
+            position:inherit;
+            margin-bottom: 98px;
+        }
+        .pages>ul>li{
+            width: 33px;
+            /* line-height: 42px; */
+            height: 33px;
+            margin-top: 73px;
+            margin-right: 7px;
+            border: 1px solid #999999;
+            float: left;
+            border-radius:5px;
+        }
+        .pages>ul>li>a>span{
+            color: #a9a9a9;
+            padding: 8px;
+            line-height: 31px;
+        }
+        .pages>ul>li>a{
+            text-decoration: none;
+        }
+        .pages>ul>li:hover{
+            border:1px solid #f35d44;
+        }
+        .pages>ul>li:hover span{
+            color:#f35d44;
+        }
+        .pages>ul>.active{
+            background-color: rgb(240, 82, 67);
+            border:1px solid rgb(240, 82, 67);
+        }
+        .pages>ul>.active>a>span{
+            color:#ffffff;
+        }
+        .cPlay>ul>li{
+            width:53px;
+            height:30px;
+            text-align: center;
+            float:left;
+            margin-left: 17px;
+            margin-right: -15px;
+            margin-top: 11px;
+        }
+        .view{
+            width: 185px;
+            float: right;
+            line-height: 42px;
+        }
+        .view>a>i{
+            width: 21px;
+            height: 32px;
+            float: right;
+            margin-left: 12px;
+            margin-right: 4px;
+            background: url(img/xin.png)no-repeat 0 10px;
+        }
+        .view>a>span{
+            float:right;
+            font-size:18px;
+            color:#e8343f;
+            font-weight: bold;
+            margin-right:18px;
+        }
+        .pages>ul>.dot{
+            border:1px solid transparent;
+        }
+        .pages>ul>.dot:hover{
+            border:1px solid transparent;
+        }
+        .view>.watch>span{
+            float:right;
+            font-size:16px;
+            color:#999999;
+        }
+        .cPlay>ul>li>a>span{
+            padding:3px;
+            border:1px solid #8b8b8b;
+            border-radius:6px;
+            color:#8b8b8b;
+        }
+        .cPlay>ul>li>a{
+            text-decoration: none;
+        }
+        .cPlay>ul>li:hover span{
+            border:1px solid #f35d44;
+            color:#f35d44;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="headerContainer">
+        <div class="login" style="float:right">
+            <span type="button" id="signUp">登录</span>
+            <span class="shu">|</span>
+            <span type="button" id="register">注册</span>
+        </div>
+        <div class="headerNavActive" style="display:none">
+            <ul>
+                <li class="search" style="float:right">
+                    <input type="text" placeholder="高清国产自拍" id="search">
+                    <a href="search.html">
+                        <button>搜索</button>
+                    </a>
+                    <span class="clear" id="clear"><img src="img/X.png" alt=""></span>
+                </li>
+            </ul>
+        </div>
+        <div class="headerNav">
+            <ul>
+                <li class="">
+                    <a href="indexOld.html">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>站长推荐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>国产精品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>日韩在线</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>欧美激情</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="novelList.html">
+                        <span>色图肉文</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vipZone.html">
+                        <span>VIP专区</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goldTask.html">
+                        <span>活动中心</span>
+                    </a>
+                </li>
+                <li class="souSuo">
+                    <!--<a href="">-->
+                    <i></i>
+                    <span>搜索</span>
+                    <!--</a>-->
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="indexOld.html"><img src="img/QQG_logo1.gif" alt=""></a>
+        </div>
+    </div>
+</div>
+<div style="height:80px;"></div>
+<div class="container">
+    <div class="topAdvertising">
+        <a href="" target="_blank"><img src="img/fanSui.png" alt=""></a>
+        <a href="" target="_blank"><img src="img/adver.png" alt=""></a>
+        <a href="" target="_blank">
+            <img src="img/caiPiao.png" alt="">
+        </a>
+        <a href="" target="_blank">
+            <img src="img/login.png" alt="">
+        </a>
+    </div>
+    <div class="litterTitle">
+        <span>轻轻搞  /   国产自拍  / パンツを脫いでもメガネは外パンツを脫いでもメガネは</span>
+    </div>
+    <div class="videoContainer">
+        <div class="videoTitle">
+            <span>パンツを脫いでもメガネは外パンツを脫いでもメガネはパンツを脫いでもメガネは外パンツを脫いでもメガネは</span>
+        </div>
+        <div class="videoContent">
+            <div class="video" id="video"></div>
+        </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="videoPic">
+                        <a href="" target="_blank"><img src="img/videoPic.png" alt=""></a>
+                    </div></div>
+                    <div class="swiper-slide"><div class="videoPic">
+                        <a href="" target="_blank"><img src="img/videoPic.png" alt=""></a>
+                    </div></div>
+                    <div class="swiper-slide"><div class="videoPic">
+                        <a href="" target="_blank"><img src="img/videoPic.png" alt=""></a>
+                    </div></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+       <!--     <div class="videoPic">
+                <a href="" target="_blank"><img src="img/videoPic.png" alt=""></a>
+            </div>-->
+
+
+            <div class="hotPic">
+                <ul>
+                    <li>
+                        <span style="padding-left:11px;">标签 :</span>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="guess">
+        <div class="guessLike">
+            <i class="xin"></i>
+            <span>猜你喜欢</span>
+        </div>
+        <div class="likePic">
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+        </div>
+        <div class="text">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="anLast">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="videoDes">
+                <ul style="float:left;margin:0">
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="likePic">
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+        </div>
+        <div class="text">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="anLast">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="videoDes">
+                <ul style="float:left;margin:0">
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="likePic">
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+            <a href="" target="_blank"><i></i></a>
+        </div>
+        <div class="text">
+            <ul>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="anLast">
+                        <span>天使もえ S1ギリモザ8時間ベスト Vol…</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="videoDes">
+                <ul style="float:left;margin:0">
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="search.html">
+                                <span>自拍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>中出</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>素人</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                                <span>高清无码</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="" target="_blank"><img src="img/banner.png" alt=""></a>
+    <a href="" target="_blank"><img src="img/banner.png" alt=""></a>
+    <a href="" target="_blank"><img src="img/banner.png" alt=""></a>
+</div>
+<footer>
+    <div class="record">
+        <ul>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+        </ul>
+    </div>
+    <div class="botText">
+        <ul>
+            <li>
+                <span>全球节点智能加速</span><br>
+                <span>一键播放</span>
+            </li>
+            <li>
+                <span>历史记录收藏列表</span><br>
+                <span>贴心体验</span>
+            </li>
+            <li>
+                <span>绿色站点认证片源</span><br>
+                <span>安全无毒</span>
+            </li>
+            <li>
+                <span>清爽页面专享通道</span><br>
+                <span class="vip"><a href="vipZone.html">开通VIP</a></span>
+            </li>
+            <li>
+                <span>电脑手机随心观看</span><br>
+                <span>走到哪看到哪</span>
+            </li>
+        </ul>
+    </div>
+    <div class="qqg">
+        <span class="fontSize">轻轻搞，集你所爱，在线成人视频首选。</span><br>
+        <span>此网站只适合十八岁或以上人士观看。此网站内容可能令人反感；</span><br>
+        <span>不可将本网站的内容派发、传阅、出售、出租、交给或借予年龄未满18岁的人士或将本网站内容向该人士出示、播放或放映</span><br>
+        <span>Copyright © 2018 轻轻搞, All Rights Reserved</span>
+    </div>
+</footer>
+</body>
+<script>
+    $(function () {
+        $$.search();
+        $$.clear();
+        $$.login();
+        $$.signUp();
+        $$.Swiper();
+    })
+</script>
+<style>
+    .layui-layer-rim{
+        border:.1px solid #aa402f;
+        border-radius:8px;
+        box-shadow: 0px 0px 18px 0px #aa402f;
+    }
+    .layui-layer-setwin .layui-layer-close2{
+        position: absolute;
+        right: 5px;
+        top: 1px;
+        width: 31px;
+        height: 30px;
+        margin-left: 0;
+        background:url("img/XH.png")no-repeat center;
+    }
+    .layui-layer-setwin .layui-layer-close2:hover{
+        position: absolute;
+        right: 5px;
+        top: 1px;
+        width: 31px;
+        height: 30px;
+        margin-left: 0;
+        background:url("img/XH.png")no-repeat center;
+    }
+    .container{
+        width:1200px;
+        padding:0;
+        margin:0 auto;
+    }
+    .guessLike{
+        width:1200px;
+    }
+    .likePic{
+        width:1200px;
+    }
+    .container>img{
+        width:1200px;
+    }
+    .swiper-pagination-bullet {
+        background: #ffffff;
+        opacity: .5;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #f35d44;
+        opacity: 1;
+    }
+</style>
+<script>
+    $(function () {
+        $("#video").load('definition.html')
+    });
+</script>
+</html>

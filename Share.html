@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="css/layer/mobile/need/layer.css">
+    <script src="css/layer/layer.js"></script><script src="js/bootstrap.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="headerContainer">
+        <div class="login" style="float:right">
+            <span type="button" id="signUp">登录</span>
+            <span class="shu">|</span>
+            <span type="button" id="register">注册</span>
+        </div>
+        <div class="headerNavActive" style="display:none">
+            <ul>
+                <li class="search" style="float:right">
+                    <input type="text" placeholder="高清国产自拍" id="search">
+                    <a href="search.html">
+                        <button>搜索</button>
+                    </a>
+                    <span class="clear" id="clear"><img src="img/X.png" alt=""></span>
+                </li>
+            </ul>
+        </div>
+        <div class="headerNav">
+            <ul>
+                <li class="">
+                    <a href="indexOld.html">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>站长推荐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>国产精品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>日韩在线</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="videoList.html">
+                        <span>欧美激情</span>
+                    </a>
+                </li>
+                <li class="rou">
+                    <a href="novelList.html">
+                        <span>色图肉文</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vipZone.html">
+                        <span>VIP专区</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goldTask.html">
+                        <span>活动中心</span>
+                    </a>
+                </li>
+                <li class="souSuo">
+                    <!--<a href="">-->
+                    <i></i>
+                    <span>搜索</span>
+                    <!--</a>-->
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="indexOld.html"><img src="img/QQG_logo1.gif" alt=""></a>
+        </div>
+    </div>
+</div>
+<div style="height:98px;"></div>
+<div class="container">
+    <div class="personal">
+        <ul>
+            <li class="topSpace"></li>
+            <li class="active">
+                <a href="goldTask.html">
+                    <i class="golden"></i>
+                    <span>金币任务</span>
+                </a>
+            </li>
+            <li>
+                <a href="promotionActivity.html">
+                    <i class="promotion"></i>
+                    <span>优惠活动</span>
+                </a>
+            </li>
+            <li>
+                <a href="aboutGlod.html">
+                    <i class="aboutGolden"></i>
+                    <span>关于金币</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="containerRight">
+        <div class="return">
+            <a href="goldTask.html">
+                <div class="back">
+                    <img src="img/back.png" alt="">
+                    <div class="returnText">
+                         <span class="">返回</span>
+                    </div>
+                </div>
+            </a>
+                <div class="shareTitle">
+                    <span>分享好友，欢乐加倍，激情满满</span>
+                </div>
+            <div class="happy">
+                <p>独乐乐不如众乐乐,呼朋唤友来看片！</p>
+                <p>欢乐加倍，激情满满！</p>
+                <p>使用您的专属分享链接或二维码把本站分享给朋友，将获得金币奖励！</p>
+                <p>金币可用于观看VIP级别的精彩视频！</p>
+                <p>分享专属链接到微信、QQ好友、朋友圈、论坛会得到更多点击哟</p>
+                <p>每个朋友的点击系统会奖励1个金币，每个朋友通过你的专属链接注册系统会奖励6个金币</p>
+                <p style="" href="javascript:void(0);" class="close" data-clipboard-text="http://www.baidu.com/username" id="btn_share">复制链接</p>
+                <p>专属分享链接：http//:www.baidu.com/usernamewww.baidu.com/username</p>
+                <div class="alert alert-warning" style="display:none;text-align: center;" id="my_alert" onclick="$('#my_alert').hide();">
+                    <span style="font-size:15px;letter-spacing: 2px;">链接已复制成功！</span>
+                </div>
+             </div>
+            <div class="number">
+                <i></i>
+                <span>下载二维码</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="record">
+        <ul>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+        </ul>
+    </div>
+    <div class="botText">
+        <ul>
+            <li>
+                <span>全球节点智能加速</span><br>
+                <span>一键播放</span>
+            </li>
+            <li>
+                <span>历史记录收藏列表</span><br>
+                <span>贴心体验</span>
+            </li>
+            <li>
+                <span>绿色站点认证片源</span><br>
+                <span>安全无毒</span>
+            </li>
+            <li>
+                <span>清爽页面专享通道</span><br>
+                <span class="vip"><a href="">开通VIP</a></span>
+            </li>
+            <li>
+                <span>电脑手机随心观看</span><br>
+                <span>走到哪看到哪</span>
+            </li>
+        </ul>
+    </div>
+    <div class="qqg">
+        <span class="fontSize">轻轻搞，集你所爱，在线成人视频首选。</span><br>
+        <span>此网站只适合十八岁或以上人士观看。此网站内容可能令人反感；</span><br>
+        <span>不可将本网站的内容派发、传阅、出售、出租、交给或借予年龄未满18岁的人士或将本网站内容向该人士出示、播放或放映</span><br>
+        <span>Copyright © 2018 轻轻搞, All Rights Reserved</span>
+    </div>
+</footer>
+</body>
+<script>
+    $(function () {
+        $$.copyLine();
+        $$.search();
+        $$.clear()
+        $$.login();
+        $$.signUp()
+    })
+</script>
+<style>
+    .close:focus, .close:hover{
+        color: #555555;
+        text-decoration: none;
+        cursor: pointer;
+        filter: alpha(opacity=50);
+         opacity:1;
+    }
+    .alert-warning{
+        background: rgba(241, 86, 67,.9);
+        border:none;
+    }
+    .alert-warning{
+        color:#ffffff
+    }
+    .alert{
+        padding: 0;
+        width: 213px;
+        margin: auto;
+    }
+    .close{
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: #555555;
+        opacity: 1;
+        float: right;
+        line-height: 42px;
+    }
+    .container{
+        width:1200px;
+        padding-left:0;
+        padding-right:0;
+    }
+    .layui-layer-rim{
+        border:.1px solid #aa402f;
+        border-radius:8px;
+        box-shadow: 0px 0px 18px 0px #aa402f;
+    }
+    .layui-layer-setwin .layui-layer-close2{
+        position: absolute;
+        right: 5px;
+        top: 1px;
+        width: 31px;
+        height: 30px;
+        margin-left: 0;
+        background:url("img/XH.png")no-repeat center;
+    }
+    .layui-layer-setwin .layui-layer-close2:hover{
+        position: absolute;
+        right: 5px;
+        top: 1px;
+        width: 31px;
+        height: 30px;
+        margin-left: 0;
+        background:url("img/XH.png")no-repeat center;
+    }
+    p{
+        margin:0;
+    }
+    a{
+        text-decoration: none;
+        color:#555555;
+    }
+    a:hover{
+        text-decoration: none;
+        color:#555555;
+    }
+    a:focus{
+        text-decoration: none;
+        color:#555555;
+
+    }
+</style>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="css/layer/mobile/need/layer.css">
+    <script src="css/layer/layer.js"></script><script src="js/bootstrap.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+ /*    .origin{
+         width: 85px;
+         height: 81px;
+         border-radius: 50%;
+     }*/
+    /*  .swiper-slide{
+          !*margin-top:150px;*!
+          width:83px;
+          height:83px;
+      }*/
+    .origin>img{
+        width:85px;
+        height:85px;
+    }
+    .swiper-slide-next>img{
+        width:122px;
+        height:122px;
+    }
+    .swiper-slide-active>img{
+        width:85px;
+        height:85px;
+    }
+    .layui-layer-rim{
+        border:.1px solid #aa402f;
+        border-radius:8px;
+        box-shadow: 0px 0px 18px 0px #aa402f;
+    }
+    .layui-layer-setwin .layui-layer-close2{
+        position: absolute;
+        right: 5px;
+        top: 1px;
+        width: 31px;
+        height: 30px;
+        margin-left: 0;
+        background:url("img/XH.png")no-repeat center;
+    }
+    .layui-layer-setwin .layui-layer-close2:hover{
+        position: absolute;
+        right: 5px;
+        top: 1px;
+        width: 31px;
+        height: 30px;
+        margin-left: 0;
+        background:url("img/XH.png")no-repeat center;
+    }
+    footer{
+        margin-top:70px;
+    }
+    .container {
+        width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    p {
+        margin: 0
+    }
+</style>
+<body>
+<div class="header">
+    <div class="headerContainer">
+        <div class="login" style="float:right">
+            <span type="button" id="signUp">登录</span>
+            <span class="shu">|</span>
+            <span type="button" id="register">注册</span>
+        </div>
+        <div class="headerNavActive" style="display:none">
+            <ul>
+                <li class="search" style="float:right">
+                    <input type="text" placeholder="高清国产自拍" id="search">
+                    <a href="search.html">
+                        <button>搜索</button>
+                    </a>
+                    <span class="clear" id="clear"><img src="img/X.png" alt=""></span>
+                </li>
+            </ul>
+        </div>
+        <div class="headerNav">
+            <ul>
+                <li class="">
+                    <a href="index.html">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="List.html">
+                        <span>站长推荐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="List.html">
+                        <span>国产精品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="List.html">
+                        <span>日韩在线</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="List.html">
+                        <span>欧美激情</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Letter.html">
+                        <span>色图肉文</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="VIP.html">
+                        <span>VIP专区</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Golden.html">
+                        <span>活动中心</span>
+                    </a>
+                </li>
+                <li class="souSuo">
+                    <!--<a href="">-->
+                    <i></i>
+                    <span>搜索</span>
+                    <!--</a>-->
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="img/QQG_logo1.gif" alt=""></a>
+        </div>
+    </div>
+</div>
+<div style="height:98px;"></div>
+<div class="container">
+    <div class="leftContent">
+        <div class="timeLimit">
+            <div class="month">
+                <p class="bao">包月VIP</p>
+                <p class="money">88<span class="yuan">元</span></p>
+                <span class="time">有效期30天,不定期涨价</span>
+            </div>
+            <div class="year">
+                <p class="bao">包年VIP</p>
+                <p class="money">688<span class="yuan">元</span></p>
+                <span class="time">有效期365天,不定期涨价</span>
+            </div>
+        </div>
+        <div class="speed">
+            <div class="round">
+                <div class="swiper-container swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1850px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-prev origin" style="margin-right: 30px;"><img src="img/plane.png" alt="" class=""></div>
+                        <div class="swiper-slide swiper-slide-active origin" style=" margin-right: 30px;"><img src="img/square.png" alt="" class=""></div>
+                        <div class="swiper-slide swiper-slide-next origin" style="margin-right: 30px;"><img src="img/balloon.png" alt="" class=""></div>
+                        <div class="swiper-slide origin" style="margin-right: 30px;"><img src="img/plane.png" alt="" class=""></div>
+                        <div class="swiper-slide origin" style=" margin-right: 30px;"><img src="img/square.png" alt="" class=""></div>
+                        <div class="swiper-slide origin" style="margin-right: 30px;"><img src="img/balloon.png" alt="" class=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!--<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span></div>-->
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+            <div class="speedText">
+                <p>专享高速通道告别卡顿</p>
+                <p class="desText">VIP用户可享用专享的VIP高速通道 告别卡顿 看片更爽</p>
+                <p class="desText">畅通无阻 全站资源任性无限畅看</p>
+                <p class="corp">本站及合作伙伴活动优先体验 更多优惠 超出想象
+                <p class="corp">轻轻搞  集你所爱  在线成人视频首选</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="rightContent">
+        <img src="img/vip.png" alt="">
+    </div>
+</div>
+<footer>
+    <div class="record">
+        <ul>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+            <li><i></i></li>
+        </ul>
+    </div>
+    <div class="botText">
+        <ul>
+            <li>
+                <span>全球节点智能加速</span><br>
+                <span>一键播放</span>
+            </li>
+            <li>
+                <span>历史记录收藏列表</span><br>
+                <span>贴心体验</span>
+            </li>
+            <li>
+                <span>绿色站点认证片源</span><br>
+                <span>安全无毒</span>
+            </li>
+            <li>
+                <span>清爽页面专享通道</span><br>
+                <span class="vip"><a href="">开通VIP</a></span>
+            </li>
+            <li>
+                <span>电脑手机随心观看</span><br>
+                <span>走到哪看到哪</span>
+            </li>
+        </ul>
+    </div>
+    <div class="qqg">
+        <span class="fontSize">轻轻搞，集你所爱，在线成人视频首选。</span><br>
+        <span>此网站只适合十八岁或以上人士观看。此网站内容可能令人反感；</span><br>
+        <span>不可将本网站的内容派发、传阅、出售、出租、交给或借予年龄未满18岁的人士或将本网站内容向该人士出示、播放或放映</span><br>
+        <span>Copyright © 2018 轻轻搞, All Rights Reserved</span>
+    </div>
+</footer>
+</body>
+<script>
+    $$.search();
+    $$.clear();
+    $$.login();
+    $$.signUp()
+    $$.vipSwiper();
+</script>
+</html>

@@ -1,0 +1,19 @@
+.contentRight>ul>li {
+    color: #666666;
+    width: 945px;
+    height: 51px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-left:29px;
+    line-height: 51px;
+    border-bottom:1px solid #eeeeee;
+    margin:0 auto;
+}
+.time{
+    color:#999999;
+    font-weight: 400;
+    float:right;
+    padding-right:27px;
+}
+
